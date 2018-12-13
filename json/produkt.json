@@ -1,0 +1,96 @@
+{
+	"general": {
+		"header": "Skriveguide til den introducerende artikel",
+		"explanation": "Dette er explanation tekst",
+		"instruction": "Dette er instruction tekst"
+	},
+	"step": [
+		{
+			"stepnummer_i_pl-noter": 1,
+			"template": "template_step",
+			"template_step": {
+				"attr" : {"id": "step_1", "class": "step"},
+				"NOTE_1": "Årsagen til at content er et array er, at JSON ikke understøtter flere ens keys, som f.eks 'text' eller 'inputField'",
+				"content": [
+					{"header": "Forberedelse til vejledermøderne"},
+					{"instruction": "Udfyld felterne her på siden. Så er du velforberedt til vejledermøderne. Download dokumentet efterfølgende og arbejd videre."},
+					{"explanation": "Du skal forberede dig til vejledermøderne, inden selve skriveugen starter. Du bør have skrevet en halv side om dit emne før første møde med din vejleder. Se evt. en video om vejledningsprocessen. <br><br>  <div id='btn_1' class='btn btn-primary videoPlayBtn' data-type='video' data-videoSrc='https://www.youtube.com/embed/QvS0z0sr1UI'><span class='glyphicon glyphicon-play'></span>Vejlederens rolle</div>"},
+					{"html" : "<h2 class='subHeader'>Emne</h2>"},
+					{"inputField" : {
+						"attr": {"id": "emne", "class": "inputField fullWidth", "placeholder": "Skriv dit emne her"} 
+					}},
+					{"btn": {
+						"attr" : {"id": "btn_2", "class": "stepNav btn btn-primary marginRight_15"},
+						"text": "<span class='glyphicons glyphicons-glasses'></span>Læs mere om emnevalget",
+						"onClick": {
+							"target": "#btn_2", "NOTE": "Alle id'er og klasser angives med mellemrum - ligesom i 'target' for dropdowns",
+							"template": "template_userMsgBox",
+							"template_userMsgBox": {
+								"attr": {"id": "templ_userMsgBox_1"},
+								"content": [
+									{"text" : {
+										"attr" : {"id": "text_1"},
+										"value": "html('#step_clipborad_1 .text_1', '#text_1')"
+									}}
+								]
+							}
+						}
+					}},
+					{"tag": {
+						"attr" : {"id": "download_answer", "class": "stepNav btn btn-primary marginRight_15", "href": "../sso_emner/emner.html", "target": "_blank"}, 
+						"tagName": "a", 
+						"text": "<span class='glyphicons glyphicons-eye-open'></span> Se emner i emnebanken"
+					}},
+					{"html" : "<h2 class='subHeader'>Beskriv dit emne på en halv side</h2>"},
+					{"html" : "<p>Skriv en halv side, hvor du forklarer dine ideer og faglige motivation for at skrive om det valgte emne. Du kan også afgrænse emnet og forklare om dine valg.</p>"},
+					{"textArea": {
+						"attr" : {"id": "halvSideEmneBeskrivelse"}
+					}},
+					{"html" : "<h2 class='subHeader'>Materialeliste</h2>"},
+					{"html" : "<p>Skriv alle de bøger, kilder og empiri, som du vil anvende i din SSO, ind her.</p>"},
+					{"wrapper" : {
+						"tagName": "div",
+						"attr" : {"class": "expandable expandable_1"},
+						"content": [
+							{"html" : "<span class='glyphLi glyphicon glyphicon-asterisk'></span>"},
+							{"inputField" : {
+								"attr": {"id": "materialeliste", "class": "inputField fullWidth", "placeholder": "Skriv titlen på dit materiale her"}
+							}},
+							{"html" : "<div class='Clear'></div>"}
+						]
+					}},
+					{"btn": {
+						"attr" : {"id": "expandable_1", "class": "addWrapper_btn btn btn-primary", "data-wrapperClass": "expandable_1", "data-wrapperIdPrefix": "materialeliste"},
+						"text": "<span class='glyphicons glyphicons-plus'></span>Tilføj mere materiale"
+					}},
+					{"html" : "<h2 class='subHeader'>Spørgsmål til vejlederen</h2>"},
+					{"html" : "<p>Spørgsmål du skal huske at stille til vejleder, f.eks. faglige eller opgavetekniske spørgsmål, spørgsmål om aflevering, litteratur, forsøg, datoer mv.</p>"},
+					{"textArea": {
+						"attr" : {"id": "spoergsmaalTilVejleder", "placeholder": "Hvad har du brug for at vide mere om? Er der noget du er i tvivl om?"}
+					}},
+					{"btn": {
+						"attr" : {"id": "download_1", "class": "stepNav download_1 btn btn-primary"},
+						"text": "<span class='glyphicons glyphicons-download-alt'></span>DOWNLOAD", 
+						"onClick": "download_1(.download_1)" 
+					}}
+				]
+			},
+			"onStepReady": [
+				{
+					"delay": {
+						"wait": 600,
+						"execute": [
+							{
+								"microhint": {
+									"obj": "#download_1", 
+									"text": "Her kan du downloade din emnebeskrivelse og sende til din vejleder efterfølgende.", 
+									"multiple": true, 
+									"color": "#000"
+							}}
+						]
+					}
+				}
+			]
+		}
+	]
+}

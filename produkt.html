@@ -1,0 +1,119 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Vejlederforberedelse</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="robots" content="noindex, nofollow" />
+        <link rel="stylesheet" href="../library/css/styles.css" type="text/css" />
+
+        <!-- <link rel="stylesheet" href="vid_skriv.css" type="text/css" /> --> 
+
+        <link rel="stylesheet" href="produkt.css" type="text/css" />
+
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <div id="interface">
+                
+            </div>
+
+            <div class="hidden">
+            <!-- <div class="XXX_hidden"> -->
+
+                <h1> DETTE ER SKJULT INDHOLD, SOM HENTES IND DYNAMISK I SKRIVEGUIDEN</h1>
+
+
+                <div id="step_clipborad_1" class="step_clipborad border_red">
+
+                    <div class="text_1 border_blue text_clipborad">
+
+                        <h1>Læs mere om emnevalget</h1>
+
+                        <p>
+                            Når du har valgt fag, skal du vælge et emne, der hverken er for bredt eller for smalt. Denne emneafgrænsning sker sammen med din vejleder. 
+                        </p>
+                        <p>
+                            Det vigtigste er, at du kommer til at arbejde med et emne, hvor der både er materiale nok, og hvor kvaliteten af materialet sikrer, at du kan lave en akademisk og faglig opgave, der lever op til de krav der stilles.
+                        </p>
+
+                </div>
+                
+
+                <div id="step_clipborad_TTT" class="step_clipborad border_red">
+
+                    <div class="text_TTT_1 border_blue text_clipborad">
+
+                        <h1>XXXXX</h1>
+                        <p>
+                            XXXXX
+                        </p>
+                        <i>
+                            XXXXX
+                        </i>
+
+                        <h2>Eksempel:</h2>
+
+                        <p>
+                            XXXXXXX
+                        </p>
+
+                    </div>
+
+                    <div class="text_TTT_2 border_blue text_clipborad">
+
+                        <h1>XXXXX</h1>
+                        <p>
+                            XXXXX
+                        </p>
+                        <i>
+                            XXXXX
+                        </i>
+
+                        <h2>Eksempel:</h2>
+
+                        <p>
+                            XXXXXXX
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <script src="../library/vendor_scripts.js"></script>
+        <script src="../library/custom_scripts.js"></script>
+        <script src="html-docx.js">
+        </script>
+        <script src="filesaver.js"></script>
+        <script type="text/javascript"> 
+            getAjaxData("GET", "json/produkt.json", false, "json"); 
+            // getAjaxData("GET", "json/quizData3_test.json", false, "json"); 
+        </script>
+        <script src="../danA_skriveproces/dynamicTextClass.js"></script>    
+        <script src="../danA_skriveproces/writeProcessClass.js"></script> 
+        <script src="produkt.js"></script> 
+
+        <script type="text/javascript">
+            window.osc = Object.create(objectStorageClass);
+            osc.init('studentSession_7');
+            osc.exist('apiData');
+
+            var wpc = Object.create(writeProcessClass);
+            // wpc.init("#interface");
+            wpc.returnLastStudentSession();
+        </script>
+        
+        <script type="text/javascript">
+        $(document).ready(function() {
+            one_line_footer();
+        });
+        </script>
+    </body>
+
+</html>
+
