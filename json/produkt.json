@@ -14,7 +14,7 @@
 				"content": [
 					{"header": "Forberedelse til vejledermøderne"},
 					{"instruction": "Udfyld felterne her på siden. Så er du velforberedt til vejledermøderne. Download dokumentet efterfølgende og arbejd videre."},
-					{"explanation": "Du skal forberede dig til vejledermøderne, inden selve skriveugen starter. Du bør have skrevet en halv side om dit emne før første møde med din vejleder. Se evt. en video om vejledningsprocessen. <br><br>  <div id='btn_1' class='btn btn-primary videoPlayBtn' data-type='video' data-videoSrc='https://www.youtube.com/embed/QvS0z0sr1UI'><span class='glyphicon glyphicon-play'></span>Vejlederens rolle</div>"},
+					{"explanation": "Du skal forberede dig til vejledermøderne, inden du går i gang med at skrive din synopsis. Du bør have skrevet en halv side om dit emne før første møde med din vejleder. "},
 					{"html" : "<h2 class='subHeader'>Emne</h2>"},
 					{"inputField" : {
 						"attr": {"id": "emne", "class": "inputField fullWidth", "placeholder": "Skriv dit emne her"} 
@@ -37,7 +37,7 @@
 						}
 					}},
 					{"tag": {
-						"attr" : {"id": "download_answer", "class": "stepNav btn btn-primary marginRight_15", "href": "../sso_emner/emner.html", "target": "_blank"}, 
+						"attr" : {"id": "download_answer", "class": "stepNav btn btn-primary marginRight_15", "href": "../ep_emnebank/emner.html", "target": "_blank"}, 
 						"tagName": "a", 
 						"text": "<span class='glyphicons glyphicons-eye-open'></span> Se emner i emnebanken"
 					}},
@@ -47,7 +47,7 @@
 						"attr" : {"id": "halvSideEmneBeskrivelse"}
 					}},
 					{"html" : "<h2 class='subHeader'>Materialeliste</h2>"},
-					{"html" : "<p>Skriv alle de bøger, kilder og empiri, som du vil anvende i din SSO, ind her.</p>"},
+					{"html" : "<p>Skriv alle de materialer, som du vil anvende i din EP, ind her.</p>"},
 					{"wrapper" : {
 						"tagName": "div",
 						"attr" : {"class": "expandable expandable_1"},

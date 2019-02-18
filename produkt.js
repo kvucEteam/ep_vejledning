@@ -65,7 +65,7 @@ $( ".MsgBox_bgr_video" ).on( "keydown", function( event ) {
 function download_1() {  
 	var HTML = '';
 	HTML += '<form action="../danA_skriveproces/htmlToWord.php" method="post">';
-    HTML += 	'<input type="hidden" name="fileName" id="hiddenField" value="SSO produktkrav - forberedelse til første vejledermøde" />';
+    HTML += 	'<input type="hidden" name="fileName" id="hiddenField" value="EP produktkrav - forberedelse til første vejledermøde" />';
     HTML += 	'<input id="html" type="hidden" name="html" id="hiddenField" />';
     HTML += 	'<input id="submit" type="submit" class="btn btn-info" value="Konverter" onclick="clearInterval(downloadTimer);">';  // <---- NOTE: The "downloadTimer" is cleared here!
     HTML += '</form>';
@@ -215,11 +215,11 @@ function wordTemplate_1() {
 	HTML += 	'<br><br>';
 
 	HTML += 	'<h4>Faglig argumentation</h4>';
-	HTML += 	'<p class="gray">(Hvad vil du gerne frem til i din SSO? Hvordan vil du undersøge dit emne? Hvilke teorier, metoder og begreber kan hjælpe dig med at skrive noget faglige relevant i din opgave?)</p>';
+	HTML += 	'<p class="gray">(Hvad vil du gerne frem til i din EP? Hvordan vil du undersøge dit emne? Hvilke teorier, metoder og begreber kan hjælpe dig med at skrive noget faglige relevant i din opgave?)</p>';
 	HTML += 	'<br><br>';
 
 	HTML += 	'<h4>Materialeliste</h4>';
-	HTML += 	'<p class="gray">(Skriv videre på/redigér din litteraturliste fra første møde (bøger, kilder, og andet empiri som du vil anvende i din SSO))</p>';
+	HTML += 	'<p class="gray">(Skriv videre på/redigér din litteraturliste fra første møde (materialer, som du vil anvende i din EP))</p>';
 	HTML += 	'<br><br>';
 
 
