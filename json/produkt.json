@@ -47,7 +47,7 @@
 						"attr" : {"id": "halvSideEmneBeskrivelse"}
 					}},
 					{"html" : "<h2 class='subHeader'>Materialeliste</h2>"},
-					{"html" : "<p>Skriv alle de materialer, som du vil anvende i din EP, ind her.</p>"},
+					{"html" : "<p>Skriv alle de materialer, som du vil anvende i din EP her.</p>"},
 					{"wrapper" : {
 						"tagName": "div",
 						"attr" : {"class": "expandable expandable_1"},
