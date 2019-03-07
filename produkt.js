@@ -198,20 +198,21 @@ function wordTemplate_1() {
     HTML += '<p class="gray">(Beskrivelse af aftaler og produktkrav til det andet møde.)</p>';
 
 
-    ////////////////////ANDET VEJLEDER MØDE UDKOMMENTERET FRA WORDFILEN: ////////////////////////
+  
 
-    /*	HTML += 	'<br><br>';
+    	HTML += 	'<br><br>';
 
 
     	HTML += 	'<h1>Forberedelse til andet vejledermøde</h1>';
 
 
-    	HTML += 	'<h4>Hvilke faglige begreber vil du anvende?</h4>';
-    	HTML += 	'<p class="gray">(Skriv en halv til en hel side, hvor du giver eksempler på faglig argumentation: sproglig analyse af en af dine centrale kilder, kildekritik, beskrivelse af modeller, anvendelse af faglige begreber, beviser, udregninger mv. Produktet skal sendes til vejleder i rimelig tid inden mødet.)</p>';
+    	HTML += 	'<h4>Udarbejde udkast til synopsis</h4>';
+    	HTML += 	'<p class="gray">(Arbejd på at få lavet en synopsis klar, som du kan tale med din vejleder om.)</p>';
     	HTML += 	'<br><br>';
 
-    	HTML += 	'<h4>Hvilke faglige teorier vil du anvende?</h4>';
-    	HTML += 	'<br><br>';
+    	HTML += 	'<p><a href="https://vucdigital.dk/ep_synopsis/synopsis.html" target="_blank">Link til synopsisskabelon på vucdigital.dk</a></p>';
+    	// COMMENTED OUT 7/3-2019 //
+    /*	HTML += 	'<br><br>'; 
 
     	HTML += 	'<h4>Hvilke faglige metoder vil du anvende?</h4>';
     	HTML += 	'<br><br>';
