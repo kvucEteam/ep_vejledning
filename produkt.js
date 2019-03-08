@@ -211,8 +211,8 @@ function wordTemplate_1() {
     	HTML += 	'<br><br>';
 
     	HTML += 	'<p><a href="https://vucdigital.dk/ep_synopsis/synopsis.html" target="_blank">Link til synopsisskabelon på vucdigital.dk</a></p>';
-    	// COMMENTED OUT 7/3-2019 //
-    /*	HTML += 	'<br><br>'; 
+    /*	// COMMENTED OUT 7/3-2019 //
+    	HTML += 	'<br><br>'; 
 
     	HTML += 	'<h4>Hvilke faglige metoder vil du anvende?</h4>';
     	HTML += 	'<br><br>';
